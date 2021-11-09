@@ -1,0 +1,47 @@
+section {
+    border: 2px solid teal;
+    width: 99vw;
+    height: 98vh;
+}
+
+div {
+    background-color: purple;
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    padding: 1em;
+    margin: 1em;
+    animation-name: circle;
+    animation-duration: 10s;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+div:hover {
+    animation-play-state: paused;
+}
+
+@keyframes circle {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(90vw);
+        background-color: crimson;
+    }
+    50% {
+        transform: translate(90vw, 90vh);
+        background-color: blue;
+    }
+    75% {
+        transform: translate(0, 90vh);
+        background-color: green;
+    }
+    100% {
+        transform: translateX(0);
+        transform: translateY(0);
+        background-color: orange;
+    }
+}
